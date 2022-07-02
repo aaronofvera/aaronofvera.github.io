@@ -6,10 +6,42 @@
    <meta name="description" content="Aaron de Vera's Website" />
     <title>Aaron de Vera</title>
     <link rel="stylesheet" href="styles.css">
-	<a href="https://aarondevera.com"><img src="C:\Users\darth\Documents\GitHub\aaronofvera.github.io\logo.png" /></a>
+	<script>
+function showText(id,delay){
+var elem=document.getElementById(id);
+setTimeout(function(){elem.style.visibility='visible';},delay*1000)
+}
+window.onload=function(){
+showText('hidden1',);
+showText('hidden2',4);
+showText('hidden3',6);
+}
+</script>
   </head>
   <body>
-  <h1>hello world</h1>
+  <header>
+  <nav>
+  <ul>
+  <li><a href="pages/about-me.html">About Me</a></li>
+  <li><a href="pages/website-redesigns.html">Website Redesigns</a></li>
+  <li><a href="pages/app-mockups.html">App Mockups</li>
+  <li><a href="pages/games.html">Games</li>
+  <li><a href="pages/photo-gallery.html">Photo Gallery</li>
+  <li><a href="pages/vinyl-gallery.html">Vinyl Gallery</li>
+  <li><a href="pages/movie-compatability.html">Movie Compatability</a></li>
+  <li><a href="pages/music-compatability.html">Music Compatability</a></li>
+  </ul>
+  </nav>
+  </header>
+  <h1>Hi. I'm Aaron.</h1></br>
+  <h1><div id="hidden1" style="visibility:hidden">I'm a web designer</div></h1>
+  <h2><div id="hidden2" style="visibility:hidden">a musician</div></h2>
+  <h3><div id="hidden3" style="visibility:hidden">a photographer</div></h3>
   </body>
+  <footer>
+      <address>
+        Written by <a href="mailto:aaronjames.o.devera@gmail.com">Aaron de Vera</a></br>
+      </address>
+    </footer>
  </html>
   
