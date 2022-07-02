@@ -16,7 +16,7 @@ nav {
   display: flex;
   justify-content: center;
   text-align: center;
-  background: rgba(57, 131, 192, 0.75);
+  background: rgba(57, 131, 192, 0.2);
 }
 
 nav > ul {
@@ -30,7 +30,7 @@ nav > ul {
 nav > ul > li {
   color: #404A46;
   padding: 0.5rem;
-  font-weight: bold;
+
 }
 
 nav > ul > li:hover {
@@ -58,11 +58,11 @@ li > a {
     padding: 0.5rem 0;
   }
   body{
-        background-image: url("https://i.imgur.com/kFknPsk.jpg");
-        background-position: 50% top;
-        background-repeat: no-repeat;
+        background-image: url("https://i.imgur.com/dPLkzyA.jpg");
         background-attachment: scroll;
-        background-size: 70% auto;
+		background-repeat:no-repeat;
+		background-size:contain;
+		background-position:center;
     }
 } 
 
