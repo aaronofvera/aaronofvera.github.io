@@ -75,6 +75,9 @@
 				.triggerHandler('resize.ie-flexbox-fix');
 
 		}
+	// Carousel.
+
+
 
 	// Gallery.
 		$window.on('load', function() {
