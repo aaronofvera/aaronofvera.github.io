@@ -546,12 +546,10 @@ input, select, textarea {
 				font-size: 12pt;
 				line-height: 1.5em;
 			}
-			ul {
-				display: inline-block;
-		
-			}
+	
 
 		}
+	
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 900;
@@ -1165,6 +1163,18 @@ input, select, textarea {
 
 /* Icons */
 
+	@media only screen and (max-width: 768px) {
+			ul.icons {
+			font-size: 20px;
+			}
+		}
+
+	@media only screen and (max-width: 320px) {
+			ul.icons {
+			font-size: 10px;
+		}
+		}
+	
 	ul.icons {
 		cursor: default;
 	}
