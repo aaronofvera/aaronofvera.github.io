@@ -1165,13 +1165,13 @@ input, select, textarea {
 
 	@media only screen and (max-width: 768px) {
 			ul.icons li a{
-			font-size: 10px;
+			font-size: 25px;
 			}
 		}
 
 	@media only screen and (max-width: 320px) {
 			ul.icons li a{
-			font-size: 10px;
+			font-size: 15px;
 		}
 		}
 	
