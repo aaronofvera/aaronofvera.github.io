@@ -14,9 +14,8 @@ Body styles
 */
 body {
     font-family: "MS Sans Serif",Tahoma,Verdana,Segoe,sans-serif;
-	background: linear-gradient(to bottom, rgb(0, 128, 128) 75%, rgba(0, 0, 0, 0) 50%);
+	background-color: teal;
 	background-size: cover;
-	background-size: 100% 2px;
     color: white;
     padding-bottom: 28px;
 	
