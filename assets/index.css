@@ -815,3 +815,14 @@ fos-menu::part(window) {
 .carousel {
 	opacity: .3;
 }
+
+@media (max-width: 294px) {
+  #socials h5 {
+    font-size: 0.75rem; /* smaller text */
+    line-height: 1.2;   /* tighten spacing */
+    word-break: keep-all; /* prevents ugly breaks */
+    white-space: nowrap;  /* forces it to stay on one line */
+    overflow: hidden;
+    text-overflow: ellipsis; /* optional: adds "…" if it's too long */
+  }
+}
