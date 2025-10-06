@@ -2,227 +2,117 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Photography | Aaron de Vera</title>
+  <title>Portfolio | Aaron de Vera</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta author="Aaron de Vera" />
   <meta property="og:image" content="../assets/preview.png" />
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/index.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" href="../assets/out.PNG" sizes="256x256">
   <script src="https://kit.fontawesome.com/9d50b2f79b.js" crossorigin="anonymous"></script>
   <script src="../js/fos.min.js"></script>
+  <script src="../js/photo.js"></script>
+  <link rel="stylesheet" href="dist/css/glightbox.css" />
+	<script src="dist/js/glightbox.min.js"></script>
 
-  <style>
-    body {
-      padding-top: 70px;
-    }
-	.gallery {
-	  display: flex;
-	  flex-wrap: wrap;
-	  justify-content: center;
-	  gap: 1rem;
-	  padding: 1rem;
-	}
-
-	.photo {
-	  width: 100%;
-	  max-width: 300px;
-	  height: auto;
-	  object-fit: cover;
-	  border: 1px solid #ccc;
-	}
-	
-	.album-menu-wrapper {
-  width: 100%;
-
-  padding: 0.5rem 1rem;
-  box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1rem;
-}
-
-	.album-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  background-color: #c0c0c0;
-  border: 2px solid #808080;
-  font-family: 'Tahoma', sans-serif;
-  font-size: 14px;
-  max-width: 200px;
-}
-
-.album-menu li {
-  display: flex;
-  align-items: center;
-  padding: 6px 12px;
-  cursor: pointer;
-  color: black;
-  border-bottom: 1px solid #a0a0a0;
-  background-color: #c0c0c0;
-  transition: background-color 0.2s ease;
-  white-space: nowrap;
-}
-
-.album-menu li:hover {
-  background-color: #000080;
-  color: white;
-}
-
-.album-menu li.active {
-  background-color: #000080;
-  color: white;
-}
-
-.album-menu img {
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
-  image-rendering: pixelated;
-}
-
-/* Mobile style */
-
-@media (max-width: 767.98px) {
-	.album-menu-wrapper {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-  
-  .album-menu {
-    display: flex;
-	flex-wrap: nowrap;
-    justify-content: flex-start; /* Change from center to better enable swipe scroll */
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch; /* Enables momentum scrolling on iOS */
-    scroll-behavior: smooth;
-    background-color: #c0c0c0;
-	white-space: nowrap;
-	max-width: 100%;
-    padding: 8px 0;
-    gap: 8px;
-    scrollbar-width: none; /* Hide scrollbar on Firefox */
-  }
-
-  .album-menu::-webkit-scrollbar {
-    display: none; /* Hide scrollbar on Chrome/Safari */
-  }
-
-  .album-menu li {
-    flex: 0 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 12px;
-    margin: 0 4px;
-    border: 2px inset #fff;
-    background-color: #c0c0c0;
-    border-radius: 2px;
-    white-space: nowrap;
-  }
-
-  .album-menu li:hover {
-    background-color: #000080;
-    color: white;
-  }
-
-  .album-menu li.active {
-    background-color: #000080;
-    color: white;
-  }
-  }
-
-  </style>
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light navbar-95 fixed-top">
-    <a class="navbar-brand" href="/">
+
+<nav class="navbar navbar-expand-lg navbar-light navbar-95 ">
+  <a class="navbar-brand" href="#">
       <img src="../assets/out.PNG"> Aaron de Vera</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="/">home</a></li>
-        <li class="nav-item"><a class="nav-link" href="/#music">music</a></li>
-        <li class="nav-item dropdown active">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">photography</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="/#photography">Quick Hits</a>
-            <a class="dropdown-item active" href="/photography">Portfolio</a>
-          </div>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="/#about-me">about me</a></li>
-      </ul>
+</nav>
+
+<section id="photo-gallery">
+  <div class="gallery-header">
+  <div>
+  <h1>Portfolio</h1>
+  </div>
+    <div class="filter-buttons">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="people">People</button>
+      <button data-filter="landscapes">Landscapes</button>
+      <button data-filter="trips">Trips</button>
+	  <button data-filter="art">Art</button>
     </div>
-  </nav>
+  </div>
+  
+  <div class="gallery-grid">
+  
 
-	<div class="album-menu-wrapper">
-	  <ul class="album-menu" id="album-filter">
-		<li data-album="all" class="active"><img src="icons/folder_open.png"> All Photos</li>
-		<li data-album="nature"><img src="icons/tree.png"> Nature</li>
-		<li data-album="portraits"><img src="icons/user.png"> Portraits</li>
-		<li data-album="street"><img src="icons/camera.png"> Street</li>
-	  </ul>
+    <!-- Each “item” is one photo or project cover -->
+	
+	<!-- People -->
+
+	
+	<!-- Landscapes -->
+
+    <div class="gallery-item landscapes">
+      <a href="albums/fulls/01.jpg" 
+	     class="glightbox">
+        <img src="albums/thumbs/01.jpg" alt="Description">
+        <div class="caption">Another Title / Year</div>
+      </a>
+    </div>
+	
+	<div class="gallery-item landscapes">
+      <a href="albums/fulls/02.jpg" 
+	     class="glightbox">
+        <img src="albums/thumbs/02.jpg" alt="Description">
+        <div class="caption">Another Title / Year</div>
+      </a>
+    </div>
+	
+	<div class="gallery-item landscapes">
+      <a href="albums/fulls/03.jpg" 
+	     class="glightbox">
+        <img src="albums/thumbs/03.jpg" alt="Description">
+        <div class="caption">Another Title / Year</div>
+      </a>
+    </div>
+	
+	<!-- Trips -->
+	
+	<!-- Photoshoots -->
+	
+	<!-- Art -->
+
+
+	
 	</div>
+  </div>
+</section>
 
-	<div class="container-fluid">
-	  <div class="row">
-		<main class="col-12">
-		  <div class="gallery" id="photo-gallery">
-			<img src="albums/album1/Ranger Purple.jpg" class="photo" data-album="nature">
-			<img src="albums/album2/Ranger Black.jpg" class="photo" data-album="portraits">
-			<img src="albums/street/photo3.jpg" class="photo" data-album="street">
-			<img src="/albums/nature/photo4.jpg" class="photo" data-album="nature">
-			<img src="/albums/portraits/photo5.jpg" class="photo" data-album="portraits">
-		  </div>
-		</main>
-	  </div>
-	</div>
-
-  <fos-bar>
-    <fos-menu name="Start" tabindex="0">
-      <div style="min-width: 100px">Menu</div>
-      <hr>
-      <a href="#about-me"><fos-menu-item href="#about-me" tabindex="0"><img src="../assets/out.PNG">about</fos-menu-item></a>
-      <a href="#music"><fos-menu-item tabindex="0"><img src="../assets/tumblr_3ea96a37f9c508e9c7ca7f95c2d9e5c6_ebf8e360_1280.png">music</fos-menu-item></a>
-    </fos-menu>
-    <div id="clock">21:22</div>
-  </fos-bar>
+<fos-bar>
+	<fos-menu name="Start" tabindex="0">
+				<div style="min-width: 100px">Menu</div>
+				<hr>
+				<a href="/"><fos-menu-item tabindex="0"><img src="../assets/home.png">home</fos-menu-item></a>
+				<a href="/#about-me"><fos-menu-item href="#about-me" tabindex="0"><img src="../assets/out.PNG">about</fos-menu-item></a>
+				<a href="/#music"><fos-menu-item tabindex="0"><img src="../assets/tumblr_3ea96a37f9c508e9c7ca7f95c2d9e5c6_ebf8e360_1280.png">music</fos-menu-item></a>
+				<a href="/#photography"><fos-menu-item tabindex="0"><img src="../assets/photography.png">photography</fos-menu-item></a>
+				<a href="/"><fos-menu-item tabindex="0"><img src="../assets/portfolio.png">portfolio</fos-menu-item></a>
+				<a href="/#socials"><fos-menu-item tabindex="0"><img src="../assets/socials.png">socials</fos-menu-item></a>
+			</fos-menu>
+			<div id="clock">21:22</div>
+		</fos-bar>
 
   <script src="../js/main.js"></script>
-  <script>
-    function shufflePhotos() {
-      const gallery = document.getElementById('photo-gallery');
-      const photos = Array.from(gallery.children);
-      for (let i = photos.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        gallery.appendChild(photos[j]);
-      }
-    }
-
-    document.getElementById('album-filter').addEventListener('click', (e) => {
-      if (e.target.tagName !== 'LI') return;
-      document.querySelectorAll('#album-filter li').forEach(li => li.classList.remove('active'));
-      e.target.classList.add('active');
-      const selected = e.target.dataset.album;
-      document.querySelectorAll('.photo').forEach(photo => {
-        photo.style.display = (selected === 'all' || photo.dataset.album === selected) ? 'block' : 'none';
-      });
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const lightbox = GLightbox({
+      selector: ".glightbox",
+      touchNavigation: true,
+      loop: true,
+      zoomable: true,
+      autoplayVideos: false,
+      slideEffect: "fade",
     });
-
-    window.onload = shufflePhotos;
-
-    function updateClock() {
-      const now = new Date();
-      const hours = now.getHours().toString().padStart(2, '0');
-      const minutes = now.getMinutes().toString().padStart(2, '0');
-      document.getElementById('clock').textContent = `${hours}:${minutes}`;
-    }
-
-    setInterval(updateClock, 1000);
-    updateClock();
-  </script>
+  });
+</script>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
