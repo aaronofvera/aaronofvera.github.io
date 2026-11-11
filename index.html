@@ -1,366 +1,235 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <meta charset="utf-8">
-    <title>Aaron de Vera</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-    <meta author="Aaron de Vera" />
-    <meta property="og:image" content="assets/preview.png" />
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">  
-    <link rel="stylesheet" type="text/css" href="assets/index.css">
-    <link rel="icon" href="assets/out.PNG" sizes="256x256">
-	<link rel="preload" as="image" href="bg.png">
-	<script src="https://kit.fontawesome.com/9d50b2f79b.js" crossorigin="anonymous"></script>
-	<script src="js/fos.min.js"></script><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style>
+  <meta charset="utf-8">
+  <title>Aaron de Vera</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="author" content="Aaron de Vera">
+  <meta name="description" content="Aaron de Vera: musician, audio engineer and photographer based in Virginia.">
+  <meta property="og:title" content="Aaron de Vera">
+  <meta property="og:image" content="https://aarondevera.com/assets/preview.png">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/index.css">
+  <link rel="icon" href="assets/out.PNG" sizes="256x256">
+  <script src="js/fos.min.js"></script>
+
+  <style>
+    /* Moved out of inline styles. If index.css already styles h1, delete .hero-title there. */
+    .hero-title { font-size: clamp(0.9rem, 5vw, 3.5rem); white-space: nowrap; margin: 0 auto; }
+    .embed { border: 0; width: 100%; max-width: 350px; }
+  </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light navbar-95 ">
-  <a class="navbar-brand" href="#">
-      <img src="assets/out.PNG"> Aaron de Vera</a>
-	  
+
+<nav class="navbar navbar-expand-lg navbar-light navbar-95">
+  <a class="navbar-brand" href="#"><img src="assets/out.PNG" alt=""> Aaron de Vera</a>
 </nav>
 
 <section id="home">
-<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto mt-4 text-center">
-    <!img src="assets/logo.png">
-  <h1 class="text-nowrap text-center" style="
-  font-size: clamp(0.9rem, 5vw, 3.5rem);
-  white-space: nowrap;
-  margin: 0 auto;
-">
-  Musician&nbsp;|&nbsp;Audio Engineer&nbsp;|&nbsp;Photographer
-</h1>
-  <p class="lead">enjoy your stay</p>
-</div>
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto mt-4 text-center">
+    <h1 class="hero-title">Musician&nbsp;|&nbsp;Audio Engineer&nbsp;|&nbsp;Photographer</h1>
+  </div>
 </section>
 
 <fos-bar>
-	<fos-menu name="Start" tabindex="0">
-				<div style="min-width: 100px">Menu</div>
-				<hr>
-				<a href="/"><fos-menu-item tabindex="0"><img src="assets/home.png">home</fos-menu-item></a>
-				<a href="#about-me"><fos-menu-item href="#about-me" tabindex="0"><img src="assets/out.PNG">about</fos-menu-item></a>
-				<a href="#music"><fos-menu-item tabindex="0"><img src="assets/tumblr_3ea96a37f9c508e9c7ca7f95c2d9e5c6_ebf8e360_1280.png">music</fos-menu-item></a>
-				<a href="#photography"><fos-menu-item tabindex="0"><img src="assets/photography.png">photography</fos-menu-item></a>
-				<a href="/photography"><fos-menu-item tabindex="0"><img src="assets/portfolio.png">portfolio</fos-menu-item></a>
-				<a href="#socials"><fos-menu-item tabindex="0"><img src="assets/socials.png">socials</fos-menu-item></a>
-			</fos-menu>
-			<div id="clock">21:22</div>
-		</fos-bar>
+  <fos-menu name="Start" tabindex="0">
+    <div style="min-width: 100px">Menu</div>
+    <hr>
+    <a href="/"><fos-menu-item tabindex="0"><img src="assets/home.png" alt="">home</fos-menu-item></a>
+    <a href="#about-me"><fos-menu-item tabindex="0"><img src="assets/out.PNG" alt="">about</fos-menu-item></a>
+    <a href="#music"><fos-menu-item tabindex="0"><img src="assets/tumblr_3ea96a37f9c508e9c7ca7f95c2d9e5c6_ebf8e360_1280.png" alt="">music</fos-menu-item></a>
+    <a href="#photography"><fos-menu-item tabindex="0"><img src="assets/photography.png" alt="">photography</fos-menu-item></a>
+    <a href="/photography"><fos-menu-item tabindex="0"><img src="assets/portfolio.png" alt="">portfolio</fos-menu-item></a>
+    <a href="#socials"><fos-menu-item tabindex="0"><img src="assets/socials.png" alt="">socials</fos-menu-item></a>
+  </fos-menu>
+  <div id="clock">21:22</div>
+</fos-bar>
 
 <section id="socials">
-<div class="container">
+  <div class="container">
     <div class="card mb-4">
-    <div class="card-header">
-        <h4 class="my-0 font-weight-normal">My Socials</h4>
-        </div>
-    <div class="card-body">
-          <div class="row text-center">
-              <div class="col-6 col-md-3 text-center">
-                    <a href="https://instagram.com/aaronofvera"><img src="assets/ig.PNG">
-                    <h5>Instagram</h5>
-                    <p></p>
-					</a>
-              </div>
-              <div class="col-6 col-md-3 text-center">
-                    <a href="https://letterboxd.com/aaronofvera"><img src="assets/boxd.PNG">
-                    <h5>Letterboxd</h5>
-                  <p></p>
-				  </a>
-              </div>
-			  
-			  
-              <div class="col-6 col-md-3 text-center">
-                    <a href="https://open.spotify.com/user/lenny740"><img src="assets/evilfy.png">
-                    <h5>Spotify</h5>
-                    <p></p>
-					</a>
-              </div>
-              <div class="col-6 col-md-3 text-center">
-                    <a href="https://www.youtube.com/@aaronofvera"><img src="assets/yt.png">
-                    <h5>Youtube</h5>
-                    <p></p>
-					</a>
-              </div>
-			  
-			  
-			  <div class="col-6 col-md-3 text-center">
-                    <a href="mailto:aaronjames.o.devera@gmail.com"><img src="assets/gmail.png">
-                    <h5>Gmail</h5>
-                    <p></p>
-					</a>
-              </div>
-			  
-			  <div class="col-6 col-md-3 text-center">
-                    <a href="https://steamcommunity.com/id/aardevark"><img src="assets/steam.png">
-                    <h5>Steam</h5>
-                    <p></p>
-					</a>
-              </div>
-			  
-			  <div class="col-6 col-md-3 text-center">
-                    <a href="https://www.tiktok.com/@aaronofvera"><img src="assets/tiktok.png">
-                    <h5>Tiktok</h5>
-                    <p></p>
-					</a>
-              </div>
-          
-			  <div class="col-6 col-md-3 text-center">
-                    <a href="https://www.pinterest.com/aaronjamesdevera"><img src="assets/pinterest.png">
-                    <h5>Pinterest</h5>
-                    <p></p>
-					</a>
-              </div>
-			 
-			  
-          </div>
-          </div>
-        </div>
-</div>
+      <div class="card-header"><h4 class="my-0 font-weight-normal">My Socials</h4></div>
+      <div class="card-body">
+        <div class="row text-center" id="socials-grid"><!-- filled from the socials list below --></div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="music">
   <div class="container">
     <div class="card mb-4">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Music</h4>
+      <div class="card-header"><h4 class="my-0 font-weight-normal">Music</h4></div>
+      <div class="card-body">
+        <div class="row text-center justify-content-center" id="releases"><!-- filled from the releases list below --></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="photography">
+  <div class="container">
+    <div class="card mb-4">
+      <div class="card-header"><h4 class="my-0 font-weight-normal">Photography</h4></div>
       <div class="card-body">
         <div class="row text-center">
-
-          <div class="col-md-6 mb-4">
-            <h4>root rot (2025)</h4>
-            <h6>jellydream</h6>
-            <div class="d-flex flex-column align-items-center">
-              <iframe style="border: 0; width: 100%; max-width: 350px; height: 588px;"
-                src="https://bandcamp.com/EmbeddedPlayer/album=3621823357/size=large/bgcol=ffffff/linkcol=63b2cc/transparent=true/"
-                seamless>
-                <a href="https://jellydream.bandcamp.com/album/root-rot">root rot by jellydream</a>
-              </iframe>
-              <p class="mt-2 small text-muted text-center">
-                Performer: Drums <br>
-				Producer, Recording Engineer, Mixing Engineer, Mastering Engineer<br>
-                Songwriter on "first floor window", "breathwork" & "dud sparks / never lover"
-              </p>
-            </div>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators" id="carousel-indicators"></ul>
+            <div class="carousel-inner" id="carousel-slides"></div>
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next"><span class="carousel-control-next-icon"></span></a>
           </div>
-
-          <div class="col-md-6 mb-4">
-            <h4>Triple Crown (2025)</h4>
-            <h6>Ranger Maid</h6>
-            <div class="d-flex flex-column align-items-center">
-              <iframe style="border: 0; width: 100%; max-width: 350px; height: 555px;"
-                src="https://bandcamp.com/EmbeddedPlayer/album=447657303/size=large/bgcol=ffffff/linkcol=2ebd35/transparent=true/"
-                seamless>
-                <a href="https://rangermaid.bandcamp.com/album/triple-crown">Triple Crown by Ranger Maid</a>
-              </iframe>
-              <p class="mt-2 small text-muted text-center">
-                Performer: Bass, Vocals on "Faker" & "Sapper"<br>
-				Producer, Recording Engineer, Mixing Engineer, Mastering Engineer<br>
-				Songwriter on "Faker" & "Sapper", Co-songwriter on "Prayer"
-              </p>
-            </div>
+          <div class="col">
+            <a href="/photography"><button type="button" class="btn btn-lg btn-primary mt-4 mb-4">See More!</button></a>
           </div>
-
-          <div class="col-md-6 mb-4">
-            <h4>Who Are You Anymore? (2023)</h4>
-            <h6>Ranger Maid</h6>
-            <div class="d-flex flex-column align-items-center">
-              <iframe style="border: 0; width: 100%; max-width: 350px; height: 654px;"
-                src="https://bandcamp.com/EmbeddedPlayer/album=1596715421/size=large/bgcol=ffffff/linkcol=333333/transparent=true/"
-                seamless>
-                <a href="https://rangermaid.bandcamp.com/album/who-are-you-anymore">Who Are You Anymore? by Ranger Maid</a>
-              </iframe>
-              <p class="mt-2 small text-muted text-center">
-                Performer: Drums, Bass on all songs except "Caught", Vocals on all songs except "Caught"<br>
-				Producer, Recording Engineer, Mixing Engineer, Mastering Engineer<br>
-				Songwriter on all songs except "Caught"
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-6 mb-4">
-            <h4>fawning (2022)</h4>
-            <h6>paperplant</h6>
-            <div class="d-flex flex-column align-items-center">
-              <iframe style="border: 0; width: 100%; max-width: 350px; height: 621px;"
-                src="https://bandcamp.com/EmbeddedPlayer/album=3794425816/size=large/bgcol=ffffff/linkcol=2ebd35/transparent=true/"
-                seamless>
-                <a href="https://paperplant.bandcamp.com/album/fawning">fawning by paperplant</a>
-              </iframe>
-              <p class="mt-2 small text-muted text-center">
-                Performer: Drums<br>
-				Producer, Recording Engineer, Mixing Engineer, Mastering Engineer<br>
-				Co-songwriter on "Travis on TV" & "Cadd9"
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-6 mb-4 mx-auto">
-            <h4>Mojave EP (2020)</h4>
-            <h6>Cactus Club</h6>
-            <div class="d-flex flex-column align-items-center">
-              <iframe style="border: 0; width: 100%; max-width: 350px; height: 588px;"
-                src="https://bandcamp.com/EmbeddedPlayer/album=176370814/size=large/bgcol=ffffff/linkcol=63b2cc/transparent=true/"
-                seamless>
-                <a href="https://cactusclub.bandcamp.com/album/mojave-ep">Mojave EP by Cactus Club</a>
-              </iframe>
-              <p class="mt-2 small text-muted text-center">
-                Performer: Drums<br>
-				Co-songwriter on all songs
-              </p>
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
   </div>
 </section>
 
-
-<section id="photography">
-<div class="container">
-	<div class="card mb-4">
-			<div class="card-header">
-			<h4 class="my-0 font-weight-normal">Photography</h4>
-			</div>
-			<div class="card-body">
-			<div class="row text-center">
-						<div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-						  <!-- Indicators -->
-						  <ul class="carousel-indicators">
-							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-							<li data-target="#myCarousel" data-slide-to="1"></li>
-							<li data-target="#myCarousel" data-slide-to="2"></li>
-							<li data-target="#myCarousel" data-slide-to="3"></li>
-							<li data-target="#myCarousel" data-slide-to="4"></li>
-							<li data-target="#myCarousel" data-slide-to="5"></li>
-							<li data-target="#myCarousel" data-slide-to="6"></li>
-							<li data-target="#myCarousel" data-slide-to="7"></li>
-							<li data-target="#myCarousel" data-slide-to="8"></li>
-							<li data-target="#myCarousel" data-slide-to="9"></li>
-							<li data-target="#myCarousel" data-slide-to="10"></li>
-						  </ul>
-
-						  <!-- The slideshow -->
-						  <div class="carousel-inner">
-							<div class="carousel-item active">
-							  <img src="assets/fulls/01.jpg" alt="">
-							</div>
-							<div class="carousel-item">
-							  <img src="assets/fulls/02.jpg" alt="">
-							</div>
-							<div class="carousel-item">
-							  <img src="assets/fulls/03.jpg" alt="">
-							</div>
-							<div class="carousel-item">
-							  <img src="assets/fulls/04.jpg" alt="">
-							</div>
-							<div class="carousel-item">
-							  <img src="assets/fulls/05.jpg" alt="">
-							</div>
-							<div class="carousel-item">
-							  <img src="assets/fulls/06.jpg" alt="">
-							</div>
-							<div class="carousel-item">
-							  <img src="assets/fulls/07.jpg" alt="">
-							</div>
-							<div class="carousel-item">
-							  <img src="assets/fulls/08.jpg" alt="">
-							</div>
-							<div class="carousel-item">
-							  <img src="assets/fulls/09.jpg" alt="">
-							</div>
-							<div class="carousel-item">
-							  <img src="assets/fulls/010.jpg" alt="">
-							</div>
-						  </div>
-
-						  <!-- Left and right controls -->
-						  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-							<span class="carousel-control-prev-icon"></span>
-						  </a>
-						  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-							<span class="carousel-control-next-icon"></span>
-						  </a>
-
-						</div>
-						<div class="col">
-					<a href="/photography"><button type="button" class="btn btn-lg btn-primary mt-4 mb-4">See More!</button></a>
-					</div>
-				</div>
-			</div>
-	</div>
-</div>
-</section>
-
 <section id="about-me">
-<div class="container">
-	<div class="card mb-4">
-		<div class="card-header">
-        <h4 class="my-0 font-weight-normal">About Me</h4>
-		</div>
-	<div class="card-body">
-    <div class="row text-center">
-		<div class="col">
-		<p><img src="assets/me.png"></p>
-		</div>
-		
-		<div class="w-100"></div>
-		
-		<div class="col-1">
-		</div>
-		
-        <div class="col-10">
-            <p><img src="assets/icons/help_book_cool-1.png"> i'm a second-generation filipino-american artist based in virginia.
-			</p>
-			<p>i'm a <strong>multi-instrumentalist, songwriter & producer</strong>. a self-taught mixing, mastering, & recording engineer. a photographer. a videographer. and a graphic designer.
-			</p>
-			<p>i'm just here to enjoy art and also make it
-			</p>
+  <div class="container">
+    <div class="card mb-4">
+      <div class="card-header"><h4 class="my-0 font-weight-normal">About Me</h4></div>
+      <div class="card-body">
+        <div class="row text-center">
+          <div class="col-12"><p><img src="assets/me.png" alt="Portrait of Aaron de Vera"></p></div>
+          <div class="col-10 mx-auto">
+            <p><img src="assets/icons/help_book_cool-1.png" alt=""> i'm a second-generation filipino-american artist based in virginia.</p>
+            <p>i'm a <strong>multi-instrumentalist, songwriter &amp; producer</strong>. a self-taught mixing, mastering, &amp; recording engineer. a photographer. a videographer. and a graphic designer.</p>
+            <p>i'm just here to enjoy art and also make it</p>
+          </div>
         </div>
-		
-		<div class="col-1">
-		</div>
-		<div class="w-100"></div>
+      </div>
     </div>
-</div>
-</div>
-</div>
+  </div>
 </section>
 
-<div class="container">
-<div class="card mb-4">
-<div class="card-body">
-<div class="row text-center">
-<a href="https://info.flagcounter.com/RBNE"><img src="https://s01.flagcounter.com/count2/RBNE/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_3/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
-</div>
-<div>
-<hr>
-<p>credits</p>
-<p><a href="https://www.flaticon.com/free-icons/marketing" title="marketing icons">Marketing icons created by Freepik - Flaticon</a>
-<p></p>
-<a href="https://www.flaticon.com/free-icons/album" title="album icons">Album icons created by Good Ware - Flaticon</a>
-<p></p>
-<a href="https://www.flaticon.com/free-icons/paparazzi" title="paparazzi icons">Paparazzi icons created by Freepik - Flaticon</a>
-<p></p>
-<a href="https://www.flaticon.com/free-icons/home" title="home icons">Home icons created by Dave Gandy - Flaticon</a>
-<p></p>
-<a href="https://www.flaticon.com/free-icons/gmail" title="gmail icons">Gmail icons created by Pixel perfect - Flaticon</a></div>
-<p></p>
-<a href="https://www.flaticon.com/free-icons/pinterest" title="pinterest icons">Pinterest icons created by Ruslan Babkin - Flaticon</a>
-<p></p>
-<a href="https://www.flaticon.com/free-icons/steam" title="steam icons">Steam icons created by pocike - Flaticon</a>
-</div>
-</div>
-</div>
+<footer class="container">
+  <div class="card mb-4">
+    <div class="card-body text-center">
+      <a href="https://info.flagcounter.com/RBNE"><img src="https://s01.flagcounter.com/count2/RBNE/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_3/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter"></a>
+      <hr>
+      <p>credits</p>
+      <ul class="list-unstyled" id="credits"></ul>
+    </div>
+  </div>
+</footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
+
+<script>
+(() => {
+/* ============================================================
+   EDIT YOUR CONTENT HERE. The page markup above never changes.
+   ============================================================ */
+
+// One place to change the look of every Bandcamp player (hex, no #).
+const BC = { bg: 'ffffff', link: '63b2cc' };
+
+// Newest first. kind is 'album' or 'track'. height is the player height in px.
+// url (optional) is the fallback link shown if the embed can't load.
+const releases = [
+  { id: 3763752792, title: 'Hangar', year: 2026, artist: 'fishgirl', height: 428,
+    url: 'https://girlfish.bandcamp.com/track/hangar',
+	credits: ['Performer: Drums',
+              'Producer, Recording Engineer, Mixing Engineer, Mastering Engineer'] },
+  { id: 1891082381, title: 'Heartpins!', year: 2026, artist: 'fishgirl', height: 621,
+    url: 'https://girlfish.bandcamp.com/album/heartpins',
+	credits: ['Performer: Drums',
+              'Producer, Recording Engineer, Mixing Engineer, Mastering Engineer',
+			  'Co-songwriter on "Angel" '] },
+  { id: 3621823357, title: 'root rot', year: 2025, artist: 'jellydream', height: 588,
+    url: 'https://jellydream.bandcamp.com/album/root-rot',
+    credits: ['Performer: Drums',
+              'Producer, Recording Engineer, Mixing Engineer, Mastering Engineer',
+              'Songwriter on "first floor window", "breathwork" &amp; "dud sparks / never lover"'] },
+  { id: 447657303, title: 'Triple Crown', year: 2025, artist: 'Ranger Maid', height: 555,
+    url: 'https://rangermaid.bandcamp.com/album/triple-crown',
+    credits: ['Performer: Bass, Vocals on "Faker" &amp; "Sapper"',
+              'Producer, Recording Engineer, Mixing Engineer, Mastering Engineer',
+              'Songwriter on "Faker" &amp; "Sapper", Co-songwriter on "Prayer"'] },
+  { id: 1596715421, title: 'Who Are You Anymore?', year: 2023, artist: 'Ranger Maid', height: 654,
+    url: 'https://rangermaid.bandcamp.com/album/who-are-you-anymore',
+    credits: ['Performer: Drums, Bass on all songs except "Caught", Vocals on all songs except "Caught"',
+              'Producer, Recording Engineer, Mixing Engineer, Mastering Engineer',
+              'Songwriter on all songs except "Caught"'] },
+  { id: 3794425816, title: 'fawning', year: 2022, artist: 'paperplant', height: 621,
+    url: 'https://paperplant.bandcamp.com/album/fawning',
+    credits: ['Performer: Drums',
+              'Producer, Recording Engineer, Mixing Engineer, Mastering Engineer',
+              'Co-songwriter on "Travis on TV" &amp; "Cadd9"'] },
+  { id: 176370814, title: 'Mojave EP', year: 2020, artist: 'Cactus Club', height: 588,
+    url: 'https://cactusclub.bandcamp.com/album/mojave-ep',
+    credits: ['Performer: Drums',
+              'Co-songwriter on all songs'] },
+];
+
+// File names keep their exact case (.PNG vs .png matters on most hosts).
+const socials = [
+  { name: 'Instagram',  url: 'https://instagram.com/aaronofvera',               icon: 'assets/ig.PNG' },
+  { name: 'Letterboxd', url: 'https://letterboxd.com/aaronofvera',              icon: 'assets/boxd.PNG' },
+  { name: 'Spotify',    url: 'https://open.spotify.com/user/lenny740',          icon: 'assets/evilfy.png' },
+  { name: 'Youtube',    url: 'https://www.youtube.com/@aaronofvera',            icon: 'assets/yt.png' },
+  { name: 'Gmail',      url: 'mailto:aaronjames.o.devera@gmail.com',            icon: 'assets/gmail.png' },
+  { name: 'Steam',      url: 'https://steamcommunity.com/id/aardevark',         icon: 'assets/steam.png' },
+  { name: 'Tiktok',     url: 'https://www.tiktok.com/@aaronofvera',             icon: 'assets/tiktok.png' },
+  { name: 'Pinterest',  url: 'https://www.pinterest.com/aaronjamesdevera',      icon: 'assets/pinterest.png' },
+];
+
+// Photos are assets/fulls/01.jpg ... 09.jpg, then 010.jpg (that odd name is why it's '0' + n).
+// Tip: rename 010.jpg to 10.jpg, then change this to String(i + 1).padStart(2, '0').
+const photos = Array.from({ length: 10 }, (_, i) => ({
+  src: `assets/fulls/0${i + 1}.jpg`,
+  alt: `Photograph ${i + 1} by Aaron de Vera`, // replace with real descriptions when you have time
+}));
+
+// [icon search term, artist]
+const iconCredits = [
+  ['marketing', 'Freepik'], ['album', 'Good Ware'], ['paparazzi', 'Freepik'], ['home', 'Dave Gandy'],
+  ['gmail', 'Pixel perfect'], ['pinterest', 'Ruslan Babkin'], ['steam', 'pocike'],
+];
+
+/* ============================================================
+   RENDERING (you shouldn't need to touch this)
+   ============================================================ */
+const $ = id => document.getElementById(id);
+const cap = s => s[0].toUpperCase() + s.slice(1);
+
+$('socials-grid').innerHTML = socials.map(s => `
+  <div class="col-6 col-md-3 text-center">
+    <a href="${s.url}"><img src="${s.icon}" alt=""><h5>${s.name}</h5></a>
+  </div>`).join('');
+
+$('releases').innerHTML = releases.map(r => {
+  const src = `https://bandcamp.com/EmbeddedPlayer/${r.kind || 'album'}=${r.id}/size=large/bgcol=${BC.bg}/linkcol=${BC.link}/transparent=true/`;
+  const label = `${r.title} by ${r.artist}`;
+  return `
+  <div class="col-md-6 mb-4">
+    <h4>${r.title} (${r.year})</h4>
+    <h6>${r.artist}</h6>
+    <div class="d-flex flex-column align-items-center">
+      <iframe class="embed" style="height:${r.height}px" src="${src}" title="${label}" loading="lazy">
+        ${r.url ? `<a href="${r.url}">${label}</a>` : ''}
+      </iframe>
+      <p class="mt-2 small text-muted text-center">${r.credits.join('<br>')}</p>
+    </div>
+  </div>`;
+}).join('');
+
+$('carousel-indicators').innerHTML = photos.map((_, i) =>
+  `<li data-target="#myCarousel" data-slide-to="${i}"${i === 0 ? ' class="active"' : ''}></li>`).join('');
+
+$('carousel-slides').innerHTML = photos.map((p, i) =>
+  `<div class="carousel-item${i === 0 ? ' active' : ''}"><img src="${p.src}" alt="${p.alt}"></div>`).join('');
+
+$('credits').innerHTML = iconCredits.map(([slug, artist]) =>
+  `<li><a href="https://www.flaticon.com/free-icons/${slug}" title="${slug} icons">${cap(slug)} icons created by ${artist} - Flaticon</a></li>`).join('');
+})();
+</script>
 </body>
 </html>

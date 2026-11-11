@@ -89,7 +89,6 @@ Scrollbar (only chrome & safari)
     -webkit-transform: rotateY(-90deg);
     transform: rotateY(-90deg);
     border: 1px outset #fff;
-    border-shadow: 1px 1px #000;
 }
 ::-webkit-scrollbar-button:vertical:decrement {
     width: 11px;
@@ -99,14 +98,12 @@ Scrollbar (only chrome & safari)
     transform: rotateX(180deg);
     -webkit-transform: rotateY(180deg);
     border: 1px outset #fff;
-    border-shadow: 1px 1px #000
 }
 ::-webkit-scrollbar-track{
     background-image: url(background.bmp)
 }
 ::-webkit-scrollbar-thumb:vertical {
     border: 1px outset #fff;
-    border-shadow: 1px 1px #000;
     height: 40px;
     background-color: silver
 }
@@ -131,7 +128,6 @@ Scrollbar (only chrome & safari)
     height: 18px;
     margin: 1px 1px 1px 10px;
     border: 1px outset #fff;
-    border-shadow: 1px 1px #000
 }
 ::-webkit-scrollbar-button:horizontal:decrement {
     background: silver url(comboleft.png) no-repeat 50%;
@@ -143,7 +139,6 @@ Scrollbar (only chrome & safari)
 }
 ::-webkit-scrollbar-thumb:horizontal {
     border: 1px outset #fff;
-    border-shadow: 1px 1px #000;
     height: 40px;
     background-color: silver
 }
@@ -172,7 +167,6 @@ Scrollbar (only chrome & safari)
 }
 .btn:focus {
     border: 2px inset #fff !important;
-    background: silver;
     color: #424242;
     box-shadow: -1px -1px #000 !important;
     outline: 0 !important;
@@ -804,16 +798,6 @@ fos-menu::part(title):active {
 
 fos-menu::part(window) {
     background-color: silver
-}
-
-}
-
-/* Carousel
-
-*/
-
-.carousel {
-	opacity: .3;
 }
 
 @media (max-width: 294px) {
